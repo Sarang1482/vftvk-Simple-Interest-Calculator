@@ -1,4 +1,50 @@
-body {background-color:black;}
-h1{color:green;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:black; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+section{
+    background-color: white;
+    padding: 30px;
+    width: 540px;
+    margin: 5px auto;
+    border-radius: 25px;
+    min-height: 250px;
+}
+h1{
+    color:#888; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
 
 
+label{
+    width: 120px;
+    display: inline-block;
+    padding: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form {
+ margin: 0 auto;
+ width: 72%;
+}
+button{
+    padding: 3px 7px;
+    background-color: #f2f2f2;
+    border: 1px solid #000;
+    border-radius: 3px 3px;
+}
+div{
+    padding: 5px 0 0;
+}
+footer{
+    margin: 10px 0 0;
+}

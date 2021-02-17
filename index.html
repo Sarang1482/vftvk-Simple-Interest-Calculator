@@ -1,16 +1,47 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <title>Web App – Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <section>
+            <h1>Simple Interest Calculator</h1>
+        
+          <div class="form">  
+              <label> Amount: </label> 
+              <input id="principal" type="number" required><br/>
+            <label>  Rate: </label> 
+            <input type="range" min="1" max="20" value="1" id="rate" step="0.5" oninput="slide();"> 
+            <span id="print_val">1</span>%<br/>
+        <label> No. of Years:</label> 
+         <select id="years">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+        
+          </select><br/>
+  
+          <button onclick="compute()">Compute Interest</button>
+          <br/>
+          <div id="show">
+            <div>If you deposit  <mark><span id="deposit"></span></mark>,</div> 
+            <div>at an ineterest rate of  <mark><span id="int_rate"></span>%</mark>,</div> 
+            <div>You will receive an amount of  <mark><span id="result"></span></mark>,</div> 
+            <div>in the year  <mark> <span id="year_on"></span></mark></div>
+          </div>
+        </div>
+            <footer>
+                &copy; Everyone Can Get Rich
+            </footer>
+        </section>
     </body>
 </html>
